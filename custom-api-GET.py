@@ -50,7 +50,7 @@ while True:
         restart_var = input("Press enter to restart or type the word 'exit' to exit the program\n")
         if restart_var == 'exit': 
             break
-        else : 
+        else: 
             continue
         
     #if the above try fails then it will give an error message with a chance to restart from the beginning.
