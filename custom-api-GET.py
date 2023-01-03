@@ -4,9 +4,9 @@ import json
 while True:
     
     #will try to make a connection with the user supplied url
-    #error message if that connection string fails with a chance to restart
+    #error message if that connection string fails with a chance to restart from the beginning
     try:
-        user_url = input("What is the URL of the API your accesing? https://jsonplaceholder.typicode.com/todos/1 = an example.\n")
+        user_url = input("What is the URL of the API your accessing? https://jsonplaceholder.typicode.com/todos/1 = an example.\n")
         get_url = requests.get(user_url)
         
     except:
@@ -17,7 +17,7 @@ while True:
             continue
         
     #will try to pull the data and convert into json format
-    #error message if that fails with a chance to restart
+    #error message if that fails with a chance to restart from the beginning
     try:
         pull_data = get_url.text
         json_parse = json.loads(pull_data)
@@ -47,7 +47,7 @@ while True:
         else : 
             break
         
-    #if above try fails it will give error message with a chance to restart from begaining.
+    #if the above try fails then it will give an error message with a chance to restart from the beginning.
     except:
         null_json = input("Failed to print the json variable. Please check that the id your using is correct. please press enter to restart or type 'exit' to exit\n")
         if null_json == 'exit':
