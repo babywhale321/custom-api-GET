@@ -34,12 +34,12 @@ while True:
         user_json1 = input("How many nested variables are there? (1-2)\n")
         if user_json1 == '1':
             user_json1_input = input("What is the variable you are looking for? 12 = an example\n")
-            print(user_json1_input,json_parse[user_json1_input])
+            print(json_parse[user_json1_input])
         
         elif user_json1 == '2':
             user_json1_input = input("What is the first variable you are looking for? 12 = an example\n")
             user_json2_input = input("What is the second nested variable your looking for? name = an example\n")
-            print(user_json2_input,json_parse[user_json1_input][user_json2_input])
+            print(json_parse[user_json1_input][user_json2_input])
         else:
             not1to2 = input("Please only type the numbers 1 or 2. Press enter to restart or type 'exit' to exit\n")
             if not1to2 == 'exit':
