@@ -40,7 +40,6 @@ while True:
             user_json1_input = input("What is the first variable you are looking for? 12 = an example\n")
             user_json2_input = input("What is the second nested variable your looking for? name = an example\n")
             print(user_json2_input,json_parse[user_json1_input][user_json2_input])
-            
         else:
             not1to2 = input("Please only type the numbers 1 or 2. Press enter to restart or type 'exit' to exit\n")
             if not1to2 == 'exit':
